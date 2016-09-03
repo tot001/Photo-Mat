@@ -91,6 +91,7 @@
             </a>
         {% if x.index %}
         	
+        	<p class="Ans">
         	<a>        		
             <input id="zan{{ x.index }}" type="submit" class="zan" name="zan" value=""/>
             <tt>{{ x.zan }}</tt>
@@ -100,7 +101,8 @@
             <input id="cai{{ x.index }}" type="submit" class="cai" name="cai" value=""/>
             <tt>{{ x.cai }}</tt>
         	</a>
-        	
+        	</p>
+
             <script>
                 $("#zan{{ x.index }}").click(function () {
                     $.get("/zan/?id={{ x.index }}&count={{ x.zan }}")

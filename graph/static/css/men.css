@@ -252,7 +252,7 @@ input::-webkit-search-cancel-button {display: none;}
 
 }
 .tab-hd-con{
-		position: relative;
+	position: relative;
 	width: 50%;
 	font-size:1rem;
 	line-height: 40px;
@@ -300,6 +300,11 @@ input::-webkit-search-cancel-button {display: none;}
 	color: #fff;
 }
 
+.Ans{
+	margin-top: 10px;
+    position: relative;
+}
+
 .zan{
 	width: 18px;
 	height: 18px;
@@ -312,6 +317,7 @@ input::-webkit-search-cancel-button {display: none;}
 	border:none;
 	background: url(../images/cai.png) center no-repeat;
 }
+
 /*food---------------------------------------------------*/
 .food{
 	width: 100%;
