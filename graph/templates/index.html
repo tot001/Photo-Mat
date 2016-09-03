@@ -84,11 +84,13 @@
         <ul class="list">
 {% for i in l3 %}
     {% for x in i %}
+    	{% if x.username %}
         <li>
             <a href="/in/?name={{ x.username }}&kap={{ x.kap }}&class={{ x.C_lass }}">
             <img class="iload lazy" data-original="{{ x.headImg }}" src="{{ x.headImg }}" alt="">
             <p class="img-name">{{ x.kap }} {{ x.C_lass }} {{ x.username }}</p>
             </a>
+            {% endif %}
         {% if x.index %}
         	
         	<p class="Ans">
@@ -111,8 +113,8 @@
                     $.get("/cai/?id={{ x.index }}&count={{ x.cai }}")
                 })
             </script>
-        {% endif %}
         </li>
+        {% endif %}
 
     {% endfor %}
 {% endfor %}
